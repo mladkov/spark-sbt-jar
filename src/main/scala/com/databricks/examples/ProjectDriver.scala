@@ -9,7 +9,7 @@ object ProjectDriver {
     val df = dateDimension.createDataFrame()
     df.show()
 
-    println("Secrets API call now")
+    println("Secrets API call coming up next")
     val specialKey = dbutils.secrets.get("mladen-example", "mladen-special-key")
     println("Special Key: " + specialKey)
   }
